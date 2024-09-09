@@ -37,11 +37,9 @@ echo "| $text   |"
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
 ```
 ```
-#сделали файл исполняемым
 chmod +x banner.sh
 ```
 ```
-#запуск скрипта
 ./banner.sh "Hello from RTU MIREA!"
 ```
 ![image](https://github.com/user-attachments/assets/2e6defda-7070-4d41-aff2-6f6a955b6878)
