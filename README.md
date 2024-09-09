@@ -20,6 +20,7 @@ text_length=${#text}
 border_length=$((text_length + 4))
  
 Вывод верхней границы
+
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
  
 Вывод текста в баннере
