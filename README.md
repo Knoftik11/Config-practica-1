@@ -16,7 +16,7 @@ cat /etc/protocols | awk '{print $2, $1}' | sort -nr | head -5
 nano banner.sh
 ```
 ```
-bin/bash
+#!/bin/bash
  
 if [ $# exit 1]; then
         echo "Использование: $0 \"Hello from RTU MIREA!\""
