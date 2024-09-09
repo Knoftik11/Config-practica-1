@@ -1,13 +1,18 @@
 # Задание 1
-
+```
 grep '.*' /etc/passwd | cut -d':' -f1 | sort
+```
 
 # Задание 2
+```
 cat /etc/protocols | awk '{print $2, $1}' | sort -nr | head -5
+```
 
 # Задание 3
+```
 nano banner.sh
-
+```
+```
 bin/bash
  
 if [ $# exit 1]; then
@@ -19,20 +24,22 @@ text="$1"
 text_length=${#text}
 border_length=$((text_length + 4))
  
-Вывод верхней границы
-
+#Вывод верхней границы
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
  
-Вывод текста в баннере
+# Вывод текста в баннере
 echo "| $text |"
  
 # Вывод нижней границы
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
-
+```
+```
 chmod +x banner.sh (сделали файл исполняемым)
+```
+```
 ./banner.sh "Hello from RTU MIREA!" (запуск скрипта)
-
-# Задание 4
+```
+Задание 4
 nano hello.c
 
 #include <stdio.h>
@@ -47,7 +54,7 @@ int main() {
 }
 grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' hello.c | sort | uniq
 
-# Задание 5
+Задание 5
 nano reg
 
 #!/bin/bash
@@ -77,11 +84,11 @@ chmod +x reg
 показ:
 cat reg
 ./reg banner.sh
-sudo cp banner.sh /usr/local/bin/  
+sudo cp banner.sh /usr/local/bin/  (если ошибка по 4 пункту)
 ls -l /usr/local/bin/banner.sh
 banner.sh "Hello from RTU MIREA!"
 
-# Задание 6
+Задание 6
 nano check_comments.sh
 
 #!/bin/bash
@@ -93,13 +100,13 @@ fi
  
 directory="$1"
  
-
+# Проверяем, существует ли указанный каталог
 if [ ! -d "$directory" ]; then
         echo "Каталог $directory не существует."
         exit 1
 fi
  
-
+# Проверяем наличие комментария в первой строке файла
 check_comment() {
         local file="$1"
         local extension="${file##*.}"  # Получаем расширение файла
@@ -121,7 +128,7 @@ ls -R
 ./check_comments.sh .
 cat check_comments.sh
 
-# Задание 7 
+Задание 7 
 nano find_duplicates.sh
 
 #!/bin/bash
@@ -133,14 +140,14 @@ fi
 
 directory="$1"
 
-
+# Поиск дубликатов с использованием md5sum
 find "$directory" -type f -print0 | xargs -0 md5sum | sort | uniq -d -w 32 | sed -r 's/^[0-9a-f]*( )//' | while read -r duplicate; do
   echo "Дубликат: $duplicate"
 done
 chmod +x find_duplicates.sh
 ./find_duplicates.sh /root
 
-# Задание 8 
+Задание 8 
 nano archive_files.sh
  
 #!/bin/bash
@@ -153,16 +160,16 @@ fi
 extension="$1"
 archive_name="$2"
 
-
+# Поиск файлов с заданным расширением в текущем каталоге
 files=$(find . -type f -name "*.$extension")
 
-
+# Проверка наличия файлов
 if [ -z "$files" ]; then
   echo "Файлов с расширением .$extension не найдено."
   exit 1
 fi
 
-
+# Архивация файлов
 tar -czvf "$archive_name.tar.gz" $files
 
 echo "Файлы с расширением .$extension были архивированы в $archive_name.tar.gz"
@@ -171,7 +178,7 @@ tar -tzvf myarchive.tar.gz
 ls -l
 ls -ld .
 
-# Задание 9
+Задание 9
 nano replace_spaces.sh
 
 #!/bin/bash
@@ -184,12 +191,13 @@ fi
 input_file="$1"
 output_file="$2"
 
+# Проверка существования входного файла
 if [ ! -f "$input_file" ]; then
   echo "Входной файл $input_file не существует."
   exit 1
 fi
 
-
+# Замена последовательностей из 4 пробелов на символ табуляции и запись в выходной файл
 sed 's/    /\t/g' "$input_file" > "$output_file"
 
 echo "Замена завершена. Результат сохранен в $output_file."
@@ -200,7 +208,7 @@ cat input.txt
 cat output.txt
 od -c output.txt
 
-# Задание 10
+Задание 10
 nano find_empty_files.sh
 
 #!/bin/bash
@@ -221,4 +229,3 @@ fi
 # Поиск пустых текстовых файлов
 find "$directory" -type f -empty -exec file {} \; | grep "empty" | cut -d: -f1
 find /home/testdir -maxdepth 1 -type f -size 0c
-
