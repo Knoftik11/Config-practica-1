@@ -19,7 +19,7 @@ nano banner.sh
 #!/bin/bash
  
 if [ $# exit 1]; then
-        echo "Использование: $0 \"Hello from RTU MIREA!  \""
+        echo "Использование: $0 \"Hello from RTU MIREA!\""
         exit 1
 fi
  
@@ -31,7 +31,7 @@ border_length=$((text_length + 4))
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
  
 # Вывод текста в баннере
-echo "| $text |"
+echo "| $text   |"
  
 # Вывод нижней границы
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
@@ -44,7 +44,7 @@ chmod +x banner.sh
 #запуск скрипта
 ./banner.sh "Hello from RTU MIREA!"
 ```
-![image](https://github.com/user-attachments/assets/63d3894b-941f-4270-932e-4eda8fd62967)
+![image](https://github.com/user-attachments/assets/2e6defda-7070-4d41-aff2-6f6a955b6878)
 
 # Задание 4
 ```
