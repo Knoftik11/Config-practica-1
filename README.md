@@ -169,6 +169,7 @@ ls -R
 ```
 cat check_comments.sh
 ```
+![image](https://github.com/user-attachments/assets/17e317e6-ed2b-4e17-8ad4-ea268ed1253d)
 
 # Задание 7 
 ```
@@ -237,6 +238,7 @@ ls -l
 ```
 ls -ld .
 ```
+![image](https://github.com/user-attachments/assets/3f5c4d31-8caf-4445-89f4-0c0e7388462c)
 
 # Задание 9
 ```
