@@ -1,4 +1,4 @@
-*Задани 1
+# Задание 1
 
 grep '.*' /etc/passwd | cut -d':' -f1 | sort
 
@@ -19,10 +19,10 @@ text="$1"
 text_length=${#text}
 border_length=$((text_length + 4))
  
-#Вывод верхней границы
+Вывод верхней границы
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
  
-# Вывод текста в баннере
+Вывод текста в баннере
 echo "| $text |"
  
 # Вывод нижней границы
