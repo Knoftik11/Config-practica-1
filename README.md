@@ -1,12 +1,11 @@
-# Config-practica-1
+# Задани 1
 
-Задание 1
 grep '.*' /etc/passwd | cut -d':' -f1 | sort
 
-Задание 2
+# Задание 2
 cat /etc/protocols | awk '{print $2, $1}' | sort -nr | head -5
 
-Задание 3
+# Задание 3
 nano banner.sh
 
 bin/bash
