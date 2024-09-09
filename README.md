@@ -1,4 +1,4 @@
-- Задани 1
+- Задани 1 -
 
 grep '.*' /etc/passwd | cut -d':' -f1 | sort
 
