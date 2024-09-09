@@ -34,14 +34,18 @@ echo "| $text |"
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
 ```
 ```
-chmod +x banner.sh (сделали файл исполняемым)
+#сделали файл исполняемым
+chmod +x banner.sh
 ```
 ```
-./banner.sh "Hello from RTU MIREA!" (запуск скрипта)
+#запуск скрипта
+./banner.sh "Hello from RTU MIREA!"
 ```
-Задание 4
+# Задание 4
+```
 nano hello.c
-
+```
+```
 #include <stdio.h>
 
 void hello() {
@@ -52,11 +56,15 @@ int main() {
     hello();
     return 0;
 }
+```
+```
 grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' hello.c | sort | uniq
-
-Задание 5
+```
+# Задание 5
+```
 nano reg
-
+```
+```
 #!/bin/bash
  
 if [ $# -ne 1 ]; then
@@ -79,18 +87,34 @@ else
         echo "Команда $command не найдена."
         exit 1
 fi
+```
+```
 chmod +x reg
+```
+```
 ./reg banner.sh
-показ:
+```
+```
 cat reg
+```
+```
 ./reg banner.sh
-sudo cp banner.sh /usr/local/bin/  (если ошибка по 4 пункту)
+```
+```
+sudo cp banner.sh /usr/local/bin/
+```
+```
 ls -l /usr/local/bin/banner.sh
+```
+```
 banner.sh "Hello from RTU MIREA!"
+```
 
-Задание 6
+# Задание 6
+```
 nano check_comments.sh
-
+```
+```
 #!/bin/bash
  
 if [ $# -ne 1 ]; then
@@ -122,15 +146,28 @@ check_comment() {
                 fi
         fi
 }
+```
+```
 chmod +x check_comments.sh
+```
+```
 pwd
+```
+```
 ls -R
+```
+```
 ./check_comments.sh .
+```
+```
 cat check_comments.sh
+```
 
-Задание 7 
+# Задание 7 
+```
 nano find_duplicates.sh
-
+```
+```
 #!/bin/bash
 
 if [ $# -ne 1 ]; then
@@ -144,12 +181,19 @@ directory="$1"
 find "$directory" -type f -print0 | xargs -0 md5sum | sort | uniq -d -w 32 | sed -r 's/^[0-9a-f]*( )//' | while read -r duplicate; do
   echo "Дубликат: $duplicate"
 done
+```
+```
 chmod +x find_duplicates.sh
+```
+```
 ./find_duplicates.sh /root
+```
 
-Задание 8 
+# Задание 8 
+```
 nano archive_files.sh
- 
+ ```
+```
 #!/bin/bash
 
 if [ $# -ne 2 ]; then
@@ -173,14 +217,25 @@ fi
 tar -czvf "$archive_name.tar.gz" $files
 
 echo "Файлы с расширением .$extension были архивированы в $archive_name.tar.gz"
+```
+```
 ./archive_files.sh txt myarchive
+```
+```
 tar -tzvf myarchive.tar.gz
+```
+```
 ls -l
+```
+```
 ls -ld .
+```
 
-Задание 9
+# Задание 9
+```
 nano replace_spaces.sh
-
+```
+```
 #!/bin/bash
 
 if [ $# -ne 2 ]; then
@@ -201,16 +256,31 @@ fi
 sed 's/    /\t/g' "$input_file" > "$output_file"
 
 echo "Замена завершена. Результат сохранен в $output_file."
+```
+```
 chmod +x replace_spaces.sh
+```
+```
 echo "This is a test file with    four spaces." > input.txt
+```
+```
 cat input.txt
+```
+```
 ./replace_spaces.sh input.txt output.txt
+```
+```
 cat output.txt
+```
+```
 od -c output.txt
+```
 
-Задание 10
+# Задание 10
+```
 nano find_empty_files.sh
-
+```
+```
 #!/bin/bash
 
 if [ $# -ne 1 ]; then
@@ -228,4 +298,7 @@ fi
 
 # Поиск пустых текстовых файлов
 find "$directory" -type f -empty -exec file {} \; | grep "empty" | cut -d: -f1
+```
+```
 find /home/testdir -maxdepth 1 -type f -size 0c
+```
