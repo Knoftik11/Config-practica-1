@@ -19,7 +19,7 @@ nano banner.sh
 #!/bin/bash
  
 if [ $# exit 1]; then
-        echo "Использование: $0 \"Hello from RTU MIREA!\""
+        echo "Использование: $0 \"Hello from RTU MIREA!  \""
         exit 1
 fi
  
