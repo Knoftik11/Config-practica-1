@@ -76,7 +76,7 @@ chmod +x reg
 показ:
 cat reg
 ./reg banner.sh
-sudo cp banner.sh /usr/local/bin/  (если ошибка по 4 пункту)
+sudo cp banner.sh /usr/local/bin/  
 ls -l /usr/local/bin/banner.sh
 banner.sh "Hello from RTU MIREA!"
 
@@ -92,13 +92,13 @@ fi
  
 directory="$1"
  
-# Проверяем, существует ли указанный каталог
+
 if [ ! -d "$directory" ]; then
         echo "Каталог $directory не существует."
         exit 1
 fi
  
-# Проверяем наличие комментария в первой строке файла
+
 check_comment() {
         local file="$1"
         local extension="${file##*.}"  # Получаем расширение файла
@@ -132,7 +132,7 @@ fi
 
 directory="$1"
 
-# Поиск дубликатов с использованием md5sum
+
 find "$directory" -type f -print0 | xargs -0 md5sum | sort | uniq -d -w 32 | sed -r 's/^[0-9a-f]*( )//' | while read -r duplicate; do
   echo "Дубликат: $duplicate"
 done
@@ -152,16 +152,16 @@ fi
 extension="$1"
 archive_name="$2"
 
-# Поиск файлов с заданным расширением в текущем каталоге
+
 files=$(find . -type f -name "*.$extension")
 
-# Проверка наличия файлов
+
 if [ -z "$files" ]; then
   echo "Файлов с расширением .$extension не найдено."
   exit 1
 fi
 
-# Архивация файлов
+
 tar -czvf "$archive_name.tar.gz" $files
 
 echo "Файлы с расширением .$extension были архивированы в $archive_name.tar.gz"
@@ -183,13 +183,12 @@ fi
 input_file="$1"
 output_file="$2"
 
-# Проверка существования входного файла
 if [ ! -f "$input_file" ]; then
   echo "Входной файл $input_file не существует."
   exit 1
 fi
 
-# Замена последовательностей из 4 пробелов на символ табуляции и запись в выходной файл
+
 sed 's/    /\t/g' "$input_file" > "$output_file"
 
 echo "Замена завершена. Результат сохранен в $output_file."
