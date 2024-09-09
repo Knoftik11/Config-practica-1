@@ -9,6 +9,7 @@ grep '.*' /etc/passwd | cut -d':' -f1 | sort
 ```
 cat /etc/protocols | awk '{print $2, $1}' | sort -nr | head -5
 ```
+![image](https://github.com/user-attachments/assets/0ae6fbd7-6b9f-4516-98ee-9e40b7d28acc)
 
 # Задание 3
 ```
@@ -43,6 +44,8 @@ chmod +x banner.sh
 #запуск скрипта
 ./banner.sh "Hello from RTU MIREA!"
 ```
+![image](https://github.com/user-attachments/assets/63d3894b-941f-4270-932e-4eda8fd62967)
+
 # Задание 4
 ```
 nano hello.c
@@ -62,6 +65,8 @@ int main() {
 ```
 grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' hello.c | sort | uniq
 ```
+![image](https://github.com/user-attachments/assets/85e495dc-ee89-4f51-905d-7daecd1124f3)
+
 # Задание 5
 ```
 nano reg
