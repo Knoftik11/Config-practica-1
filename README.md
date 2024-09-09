@@ -31,7 +31,7 @@ echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
 chmod +x banner.sh (сделали файл исполняемым)
 ./banner.sh "Hello from RTU MIREA!" (запуск скрипта)
 
-Задание 4
+# Задание 4
 nano hello.c
 
 #include <stdio.h>
@@ -46,7 +46,7 @@ int main() {
 }
 grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' hello.c | sort | uniq
 
-Задание 5
+# Задание 5
 nano reg
 
 #!/bin/bash
@@ -80,7 +80,7 @@ sudo cp banner.sh /usr/local/bin/  (если ошибка по 4 пункту)
 ls -l /usr/local/bin/banner.sh
 banner.sh "Hello from RTU MIREA!"
 
-Задание 6
+# Задание 6
 nano check_comments.sh
 
 #!/bin/bash
@@ -120,7 +120,7 @@ ls -R
 ./check_comments.sh .
 cat check_comments.sh
 
-Задание 7 
+# Задание 7 
 nano find_duplicates.sh
 
 #!/bin/bash
@@ -139,7 +139,7 @@ done
 chmod +x find_duplicates.sh
 ./find_duplicates.sh /root
 
-Задание 8 
+# Задание 8 
 nano archive_files.sh
  
 #!/bin/bash
@@ -170,7 +170,7 @@ tar -tzvf myarchive.tar.gz
 ls -l
 ls -ld .
 
-Задание 9
+# Задание 9
 nano replace_spaces.sh
 
 #!/bin/bash
@@ -200,7 +200,7 @@ cat input.txt
 cat output.txt
 od -c output.txt
 
-Задание 10
+# Задание 10
 nano find_empty_files.sh
 
 #!/bin/bash
