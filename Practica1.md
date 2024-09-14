@@ -168,7 +168,8 @@ ls -R
 ```
 cat check_comments.sh
 ```
-![image](https://github.com/user-attachments/assets/17e317e6-ed2b-4e17-8ad4-ea268ed1253d)
+![image](https://github.com/user-attachments/assets/73a0c1d8-ad0d-4c5f-b6ad-2b5c640abafc)
+![image](https://github.com/user-attachments/assets/b9fcccfc-07a8-47d1-992e-57b83b65a736)
 
 # Задание 7 
 ```
@@ -195,8 +196,9 @@ chmod +x find_duplicates.sh
 ```
 ./find_duplicates.sh /root
 ```
-![image](https://github.com/user-attachments/assets/81342432-c4e1-4a6e-999c-591a49801db3)
-
+![image](https://github.com/user-attachments/assets/bb24ec8e-bc94-4ee2-af50-f1342db2f81f)
+![image](https://github.com/user-attachments/assets/1b539ba7-30ac-42ee-aee9-258bd5482797)
+![image](https://github.com/user-attachments/assets/1bb5f1eb-572e-4998-92a5-8c5bb8df1b28)
 
 # Задание 8 
 ```
@@ -239,7 +241,8 @@ ls -l
 ```
 ls -ld .
 ```
-![image](https://github.com/user-attachments/assets/3f5c4d31-8caf-4445-89f4-0c0e7388462c)
+![image](https://github.com/user-attachments/assets/9cbe49c9-deef-4e4d-b16f-69824c33171b)
+![image](https://github.com/user-attachments/assets/3a130833-b7ab-43aa-a297-184ecc415843)
 
 # Задание 9
 ```
