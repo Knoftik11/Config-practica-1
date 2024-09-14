@@ -197,7 +197,7 @@ chmod +x find_duplicates.sh
 ./find_duplicates.sh /root
 ```
 ![image](https://github.com/user-attachments/assets/bb24ec8e-bc94-4ee2-af50-f1342db2f81f)
-![image](https://github.com/user-attachments/assets/1b539ba7-30ac-42ee-aee9-258bd5482797)
+![image](https://github.com/user-attachments/assets/c57fac72-7abd-4ff9-b0b9-25bdbf104be9)
 ![image](https://github.com/user-attachments/assets/1bb5f1eb-572e-4998-92a5-8c5bb8df1b28)
 
 # Задание 8 
