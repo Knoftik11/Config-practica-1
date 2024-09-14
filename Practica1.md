@@ -1,6 +1,5 @@
 # Задание 1
-![image](https://github.com/user-attachments/assets/dad42608-1814-4847-bd7b-0b2d9cc0d64a)
-
+![image](https://github.com/user-attachments/assets/3df30e28-8189-4b97-8486-7f60f1dadd75)
 ```
 grep '.*' /etc/passwd | cut -d':' -f1 | sort
 ```
