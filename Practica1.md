@@ -7,12 +7,16 @@ grep '.*' /etc/passwd | cut -d':' -f1 | sort
 
 
 # Задание 2
+![image](https://github.com/user-attachments/assets/426740ca-f56d-4cec-9822-b16415717b48)
+
 ```
 cat /etc/protocols | awk '{print $2, $1}' | sort -nr | head -5
 ```
 ![image](https://github.com/user-attachments/assets/0ae6fbd7-6b9f-4516-98ee-9e40b7d28acc)
 
 # Задание 3
+![image](https://github.com/user-attachments/assets/dd2fb258-40e6-48a8-8506-9b264f86afbf)
+
 ```
 nano banner.sh
 ```
@@ -46,6 +50,8 @@ chmod +x banner.sh
 ![image](https://github.com/user-attachments/assets/2e6defda-7070-4d41-aff2-6f6a955b6878)
 
 # Задание 4
+![image](https://github.com/user-attachments/assets/fc2d8022-a836-4299-803d-51fde6bdec2b)
+
 ```
 nano hello.c
 ```
@@ -67,6 +73,8 @@ grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' hello.c | sort | uniq
 ![image](https://github.com/user-attachments/assets/85e495dc-ee89-4f51-905d-7daecd1124f3)
 
 # Задание 5
+![image](https://github.com/user-attachments/assets/537d2c60-8d6a-4507-b30a-4833dceafcc4)
+
 ```
 nano reg
 ```
@@ -118,6 +126,8 @@ banner.sh "Hello from RTU MIREA!"
 ![image](https://github.com/user-attachments/assets/e22edc68-ad3e-4c27-91ac-c9b909cfb327)
 
 # Задание 6
+![image](https://github.com/user-attachments/assets/760d1f8e-129b-425e-ae88-e1afd92bbf9e)
+
 ```
 nano check_comments.sh
 ```
@@ -173,6 +183,8 @@ cat check_comments.sh
 ![image](https://github.com/user-attachments/assets/b9fcccfc-07a8-47d1-992e-57b83b65a736)
 
 # Задание 7 
+![image](https://github.com/user-attachments/assets/d5c89e47-e9c1-4940-ba6d-d14357ad7a16)
+
 ```
 nano find_duplicates.sh
 ```
@@ -202,6 +214,8 @@ chmod +x find_duplicates.sh
 ![image](https://github.com/user-attachments/assets/1bb5f1eb-572e-4998-92a5-8c5bb8df1b28)
 
 # Задание 8 
+![image](https://github.com/user-attachments/assets/c3ef3d6f-d046-4bac-807e-956420a96e09)
+
 ```
 nano archive_files.sh
  ```
@@ -246,6 +260,8 @@ ls -ld .
 ![image](https://github.com/user-attachments/assets/3a130833-b7ab-43aa-a297-184ecc415843)
 
 # Задание 9
+![image](https://github.com/user-attachments/assets/85c1ae8c-1049-4011-a5b7-9f2bc4c0d843)
+
 ```
 nano replace_spaces.sh
 ```
@@ -292,6 +308,8 @@ od -c output.txt
 ![image](https://github.com/user-attachments/assets/659523f5-d048-40b8-b6bb-36fcb0632586)
 
 # Задание 10
+![image](https://github.com/user-attachments/assets/0b760768-de19-4317-8272-17a1b03e512a)
+
 ```
 nano find_empty_files.sh
 ```
