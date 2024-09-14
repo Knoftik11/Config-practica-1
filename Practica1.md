@@ -114,8 +114,7 @@ ls -l /usr/local/bin/banner.sh
 ```
 banner.sh "Hello from RTU MIREA!"
 ```
-![image](https://github.com/user-attachments/assets/612fefe5-8126-4a25-8793-d7ccdcec5a84)
-
+![image](https://github.com/user-attachments/assets/e22edc68-ad3e-4c27-91ac-c9b909cfb327)
 
 # Задание 6
 ```
