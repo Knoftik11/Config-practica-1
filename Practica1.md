@@ -1,4 +1,6 @@
 # Задание 1
+![image](https://github.com/user-attachments/assets/dad42608-1814-4847-bd7b-0b2d9cc0d64a)
+
 ```
 grep '.*' /etc/passwd | cut -d':' -f1 | sort
 ```
