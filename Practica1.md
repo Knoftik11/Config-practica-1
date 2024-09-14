@@ -114,6 +114,8 @@ ls -l /usr/local/bin/banner.sh
 ```
 banner.sh "Hello from RTU MIREA!"
 ```
+![image](https://github.com/user-attachments/assets/612fefe5-8126-4a25-8793-d7ccdcec5a84)
+
 
 # Задание 6
 ```
@@ -194,6 +196,8 @@ chmod +x find_duplicates.sh
 ```
 ./find_duplicates.sh /root
 ```
+![image](https://github.com/user-attachments/assets/81342432-c4e1-4a6e-999c-591a49801db3)
+
 
 # Задание 8 
 ```
@@ -282,6 +286,7 @@ cat output.txt
 ```
 od -c output.txt
 ```
+![image](https://github.com/user-attachments/assets/659523f5-d048-40b8-b6bb-36fcb0632586)
 
 # Задание 10
 ```
@@ -309,3 +314,5 @@ find "$directory" -type f -empty -exec file {} \; | grep "empty" | cut -d: -f1
 ```
 find /home/testdir -maxdepth 1 -type f -size 0c
 ```
+![image](https://github.com/user-attachments/assets/570e80d6-e5d4-4966-9ee2-790fa7010563)
+![image](https://github.com/user-attachments/assets/00f6e7e9-3103-40c2-9da8-5252006b12a7)
